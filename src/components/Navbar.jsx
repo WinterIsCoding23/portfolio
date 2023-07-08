@@ -26,6 +26,7 @@ const Navbar = () => {
             <span className="sm:block hidden">| Full Stack Developer</span>
           </p>
         </Link>
+        <p className="text-red-500">TestTest</p>
       </div>
     </nav>
   );
