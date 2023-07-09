@@ -7,7 +7,7 @@ import CanvasLoader from "../Loader";
 
 const Computers = () => {
   // 3D-models saved in GTLF-file-format
-  const computer = useGLTF("./desktop_pc/scene.gtlf");
+  const computer = useGLTF("./desktop_pc/scene.gltf");
 
   return (
     <mesh>
