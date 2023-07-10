@@ -27,7 +27,7 @@ const ComputersCanvas = () => {
       gl={{ preserveDrawingBuffer: true }}
     >
       {/* CanvasLoader to show while model is loading:  */}
-      <Suspense fallback={<CanvasLoader />}>
+      <Suspense>
         {/* OrbitCOntrols to move model to the left and to the right: */}
         <OrbitControls
           enableZoom={false}
@@ -42,4 +42,4 @@ const ComputersCanvas = () => {
   );
 };
 
-export default Computers;
+export default ComputersCanvas;
