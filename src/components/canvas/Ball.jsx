@@ -8,8 +8,7 @@ import {
   useTexture,
 } from "@react-three/drei";
 
-
-
+// CanvasLoader thought as fallback for Suspense - but throws error when applied, so removed
 import CanvasLoader from "../Loader";
 
 const Ball = (props) => {
