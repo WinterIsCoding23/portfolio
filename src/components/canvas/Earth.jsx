@@ -4,6 +4,12 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
+// WARNINGS when rendering: 
+// WebGL warning: texStorage(Multisample)?: `levels` must be >= 1.
+// WebGL warning: tex(Sub)Image[23]D: Resource has no data (yet?). Uploading zeros.
+// WebGL warning: texSubImage: The specified TexImage has not yet been specified.
+// WebGL warning: generateMipmap: The texture's base level must be complete. 
+
 const Earth = () => {
   // useGLTF-hook:
   const earth = useGLTF("./planet/scene.gltf");
