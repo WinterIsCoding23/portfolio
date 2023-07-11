@@ -7,6 +7,8 @@ import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { MixOperation } from "three";
 
+import { SectionWrapper } from "../hoc";
+
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
@@ -57,4 +59,5 @@ const About = () => {
   );
 };
 
-export default About;
+// export SectionWrapper around the Component (About) with the id "about"
+export default SectionWrapper(About, "about");
