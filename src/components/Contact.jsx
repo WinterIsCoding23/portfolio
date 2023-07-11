@@ -8,7 +8,25 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
-  return <div>Contact</div>;
+  const formRef = useRef();
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {};
+
+  const handleSubmit = (e) => {};
+
+  return (
+    <div
+      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+    >
+      Contact
+    </div>
+  );
 };
 
-export default Contact;
+export default SectionWrapper(Contact, "contact");
